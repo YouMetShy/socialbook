@@ -1,0 +1,13 @@
+<template name="viewProfiles">
+    <div class="row">
+        {{#each profiles}}
+        <div class="col-lg-4 text-center">
+            <div class="border border-2 border-primary m-3 p-3">
+                <img src="profile.png" alt="">
+                <p>{{first}} {{surname}}, {{age}}</p>
+                <p>{{address}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</template>
